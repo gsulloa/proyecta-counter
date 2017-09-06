@@ -1,17 +1,13 @@
 {
   "name": "web",
   "version": "0.1.0",
+  "homepage": "https://gsulloa.github.io/proyecta-counter/",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-junit",
-    "test:once": "CI=true react-scripts test --env=jsdom",
-    "test:coverage": "CI=true react-scripts test --env=jsdom --coverage",
-    "test:snap": "CI=true react-scripts test --env=jsdom -u",
-    "eject": "react-scripts eject",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "popsicle": "^9.1.0",
@@ -28,6 +24,7 @@
     "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-prettier": "^2.2.0",
     "eslint-plugin-react": "^7.2.1",
+    "gh-pages": "^1.0.0",
     "jest-enzyme": "^3.8.0",
     "jest-junit": "^2.1.0",
     "prettier": "^1.5.3",
