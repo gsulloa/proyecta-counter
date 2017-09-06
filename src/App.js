@@ -20,7 +20,7 @@ class App extends Component {
               backgroundColor: "#9dccd1"
             }} >
             <div style={{width: "auto", backgroundColor: "white", padding: "100px", borderRadius: "15px"}}>
-              <img src={require('./logo-proyecta-uc.png')} />
+              <img src={require('./logo-proyecta-uc.png')} alt={"proyecta uc"}/>
               <Counter />
               <ButtonIncrement />
             </div>

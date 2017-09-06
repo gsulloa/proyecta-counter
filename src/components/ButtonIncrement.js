@@ -12,7 +12,7 @@ const ButtonIncrement = ({increment}) => {
 const mapDispatchToProps = (dispatch) => {
   return({
     increment: async () =>{
-      const response = await popsicle.post('http://localhost:8080/increment');
+      const response = await popsicle.post('http://104.236.104.14/increment');
       return dispatch({
         type: "INCREMENT_COUNTER",
         amount: JSON.parse(response.body).amount

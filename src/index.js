@@ -12,7 +12,7 @@ const initialState = {}
 const store = configureStore(initialState)
 
 store.dispatch(async () => {
-  const resp = await popsicle.get('http://localhost:8080/amount')
+  const resp = await popsicle.get('http://104.236.104.14/amount')
   const amount = JSON.parse(resp.body).amount
   store.dispatch({type: "FETCH_COUNTER", amount})
 })
